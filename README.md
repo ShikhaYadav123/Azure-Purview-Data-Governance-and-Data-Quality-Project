@@ -1,0 +1,1 @@
+# Pharma-Safety-Data-Catalog-Quality-Framework-using-Azure-Purview
