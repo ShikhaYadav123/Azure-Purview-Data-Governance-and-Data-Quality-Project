@@ -1,4 +1,4 @@
-# 🧠 Azure Data Governance & Data Quality Project: Supply Chain
+# Azure Data Governance & Data Quality Project: Supply Chain
 
 This project demonstrates **data transformation, quality checks, and governance** using **Azure Data Factory**, **Microsoft Purview**, and **Azure Data Lake Storage (ADLS)**. 
 
@@ -6,7 +6,7 @@ The focus is on **building a trusted data foundation** through automated pipelin
 
 ---
 
-## 📌 Objective
+## Objective
 
 To design and implement a robust Azure-based pipeline that ensures:
 - **Data quality at scale** during ingestion and transformation
@@ -15,7 +15,7 @@ To design and implement a robust Azure-based pipeline that ensures:
 
 ---
 
-## 🚀 Tech Stack
+## Tech Stack
 
 | Azure Service              | Role                                                  |
 |----------------------------|--------------------------------------------------------|
@@ -26,21 +26,21 @@ To design and implement a robust Azure-based pipeline that ensures:
 
 ---
 
-## 🗂️ Dataset Overview
+## Dataset Overview
 
 - **Source**: Kaggle
 - **Total Records**: ~55K
 
 ---
 
-## 🔄 Implementation Breakdown
+## Implementation Breakdown
 
-### ✅ Phase 1: Raw Data Ingestion (ADF)
+### Phase 1: Raw Data Ingestion (ADF)
 - Uploaded source `.csv` to **ADLS** `raw-data/` container.
 - Created **linked services** and **datasets** in ADF( **Azure Data Factor**).
 - Designed a pipeline to copy raw data into ADLS Gen2.
 
-### ✅ Phase 2: Data Cleaning & Quality Checks
+###  Phase 2: Data Cleaning & Quality Checks
 - Transformed and standardized data:
   - Renamed columns
   - Parsed `OrderDate` and validated formats
@@ -50,7 +50,7 @@ To design and implement a robust Azure-based pipeline that ensures:
 - Used ADF’s **data flow** with **derived columns**, **null checks**, and **data filters**.
 - Stored `cleaned` and `invalid` data to **different folders**.
 
-### ✅ Phase 3: Data Governance with Microsoft Purview
+###  Phase 3: Data Governance with Microsoft Purview
 - Registered data sources: **ADLS**.
 - Created **business glossary terms** for supply chain concepts (`OrderDate`, `CustomerID`, etc.).
 - Scanned and **classified** sensitive fields.
@@ -60,7 +60,7 @@ To design and implement a robust Azure-based pipeline that ensures:
 
 ## 📸 Screenshots
 
-> *(Place these in a folder and link below)*
+> *https://github.com/ShikhaYadav123/Azure-Purview-Data-Governance-and-Data-Quality-Project/tree/main/Screenshots*
 
 - ADF Pipeline for Raw to Cleaned
 - Cleaned partitioned files in ADLS
@@ -68,10 +68,10 @@ To design and implement a robust Azure-based pipeline that ensures:
 - Purview Data Catalog
 ---
 
-## 🧠 Key Outcomes
+## Key Outcomes
 
-- End-to-end **data quality checks** using Azure-native services.
-- Complete **data lineage and governance** traceability.
+- End-to-end **data quality checks** using Azure services.
+- Completed **data lineage and governance** using Microsoft Purview.
 - Created a **business glossary** aligned with supply chain concepts.
 
 ---
